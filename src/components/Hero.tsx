@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Target, Award } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import samSquareLogo from "@/assets/sam-square-logo.png";
 
 const Hero = () => {
   return (
@@ -8,9 +8,9 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={heroImage} 
-          alt="Professional staffing environment" 
-          className="w-full h-full object-cover"
+          src={samSquareLogo} 
+          alt="Sam Square Staffing Logo" 
+          className="w-full h-full object-contain bg-gradient-to-r from-primary/20 to-primary-glow/30"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-glow/75"></div>
       </div>
